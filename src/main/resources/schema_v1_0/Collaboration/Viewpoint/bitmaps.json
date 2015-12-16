@@ -1,0 +1,41 @@
+{
+  "type": [
+    "array",
+    "null"
+  ],
+  "properties": {
+    "bitmap": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "guid": {
+          "type": [
+            "string"
+          ]
+        },
+        "bitmap_type": {
+          "type": "integer",
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "location": {
+          "$ref": "location.json"
+        },
+        "normal": {
+          "$ref": "normal.json"
+        },
+        "up": {
+          "$ref": "up.json"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "comment_PUT",
+  "type": "object",
+  "properties": {
+    "verbal_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "required": true,
+      "type": "string"
+    },
+    "comment": {
+      "required": true,
+      "type": "string"
+    },
+    "viewpoint_guid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reply_to_comment_guid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

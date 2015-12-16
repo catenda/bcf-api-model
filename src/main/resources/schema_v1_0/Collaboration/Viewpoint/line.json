@@ -1,0 +1,20 @@
+{
+  "type": [
+    "array",
+    "null"
+  ],
+  "items": {
+    "type": [
+      "object",
+      "null"
+    ],
+    "properties": {
+      "start_point": {
+        "$ref": "start_point.json"
+      },
+      "end_point": {
+        "$ref": "end_point.json"
+      }
+    }
+  }
+}

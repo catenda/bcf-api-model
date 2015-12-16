@@ -1,0 +1,11 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "clipping_plane": {
+        "$ref": "clipping_plane.json"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "snapshot_type": {
+      "type": "integer",
+      "enum": [
+        0,
+        1,
+        2
+      ]
+    },
+    "reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "location": {
+      "$ref": "location.json"
+    },
+    "normal": {
+      "$ref": "normal.json"
+    },
+    "up": {
+      "$ref": "up.json"
+    },
+    "height": {
+      "type": "integer"
+    }
+  }
+}

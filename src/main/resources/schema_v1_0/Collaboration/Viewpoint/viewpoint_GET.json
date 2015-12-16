@@ -1,0 +1,25 @@
+{
+  "title": "viewpoint_GET",
+  "type": "object",
+  "properties": {
+    "guid": {
+      "required": true,
+      "type": "string"
+    },
+    "orthogonal_camera": {
+      "$ref": "orthogonal_camera.json"
+    },
+    "perspective_camera": {
+      "$ref": "perspective_camera.json"
+    },
+    "lines": {
+      "$ref": "lines.json"
+    },
+    "clipping_planes": {
+        "$ref": "clipping_planes.json"
+    },
+    "bitmaps": {
+      "$ref": "bitmaps.json"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "title": "topic_PATCH",
+  "type": "object",
+  "properties": {
+    "topic_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "topic_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_link": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "priority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "index": {
+      "type": "integer"
+    },
+    "labels": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "assigned_to": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bim_snippet": {
+      "$ref": "bim_snippet.json"
+    }
+  }
+}
