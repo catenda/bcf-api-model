@@ -8,7 +8,7 @@
   <name>bcf-api-model</name>
   <description>Model classes for BCF API</description>
 
-  <version>0.1</version>
+  <version>0.2</version>
 
   <dependencies>
     <dependency>

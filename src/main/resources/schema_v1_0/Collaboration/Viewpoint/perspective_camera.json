@@ -13,7 +13,7 @@
     "camera_up_vector": {
       "$ref": "camera_up_vector.json"
     },
-    "view_to_world_scale": {
+    "field_of_view": {
       "type": "number"
     }
   }

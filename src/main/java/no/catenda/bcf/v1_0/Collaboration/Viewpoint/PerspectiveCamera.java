@@ -20,7 +20,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "camera_view_point",
     "camera_direction",
     "camera_up_vector",
-    "view_to_world_scale"
+    "field_of_view"
 })
 public class PerspectiveCamera {
 
@@ -30,8 +30,8 @@ public class PerspectiveCamera {
     private CameraDirection cameraDirection;
     @JsonProperty("camera_up_vector")
     private CameraUpVector cameraUpVector;
-    @JsonProperty("view_to_world_scale")
-    private Double viewToWorldScale;
+    @JsonProperty("field_of_view")
+    private Double fieldOfView;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -98,21 +98,21 @@ public class PerspectiveCamera {
     /**
      * 
      * @return
-     *     The viewToWorldScale
+     *     The fieldOfView
      */
-    @JsonProperty("view_to_world_scale")
-    public Double getViewToWorldScale() {
-        return viewToWorldScale;
+    @JsonProperty("field_of_view")
+    public Double getFieldOfView() {
+        return fieldOfView;
     }
 
     /**
      * 
-     * @param viewToWorldScale
-     *     The view_to_world_scale
+     * @param fieldOfView
+     *     The field_of_view
      */
-    @JsonProperty("view_to_world_scale")
-    public void setViewToWorldScale(Double viewToWorldScale) {
-        this.viewToWorldScale = viewToWorldScale;
+    @JsonProperty("field_of_view")
+    public void setFieldOfView(Double fieldOfView) {
+        this.fieldOfView = fieldOfView;
     }
 
     @Override
@@ -132,7 +132,7 @@ public class PerspectiveCamera {
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cameraViewPoint).append(cameraDirection).append(cameraUpVector).append(viewToWorldScale).append(additionalProperties).toHashCode();
+        return new HashCodeBuilder().append(cameraViewPoint).append(cameraDirection).append(cameraUpVector).append(fieldOfView).append(additionalProperties).toHashCode();
     }
 
     @Override
@@ -144,7 +144,7 @@ public class PerspectiveCamera {
             return false;
         }
         PerspectiveCamera rhs = ((PerspectiveCamera) other);
-        return new EqualsBuilder().append(cameraViewPoint, rhs.cameraViewPoint).append(cameraDirection, rhs.cameraDirection).append(cameraUpVector, rhs.cameraUpVector).append(viewToWorldScale, rhs.viewToWorldScale).append(additionalProperties, rhs.additionalProperties).isEquals();
+        return new EqualsBuilder().append(cameraViewPoint, rhs.cameraViewPoint).append(cameraDirection, rhs.cameraDirection).append(cameraUpVector, rhs.cameraUpVector).append(fieldOfView, rhs.fieldOfView).append(additionalProperties, rhs.additionalProperties).isEquals();
     }
 
 }
