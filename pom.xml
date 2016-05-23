@@ -57,9 +57,9 @@
 
   <distributionManagement>
     <repository>
-      <id>catenda.internal</id>
-      <name>Internal Release Repository</name>
-      <url>http://maven.catenda.no:80/archiva/repository/internal/</url>
+      <id>catenda.public</id>
+      <name>Public Release Repository</name>
+      <url>http://maven.catenda.no:80/archiva/repository/public/</url>
     </repository>
     <snapshotRepository>
       <id>catenda.snapshots</id>
